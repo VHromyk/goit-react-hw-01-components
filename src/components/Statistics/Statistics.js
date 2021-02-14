@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 const Statistics = ({ stats }) => (
-  <section class="statistics">
-    <h2 class="title">Upload stats</h2>
+  <section className="statistics">
+    <h2 className="title">Upload stats</h2>
 
-    <ul class="stat-list">
+    <ul className="stat-list">
       {stats.map(({ id, label, percentage }) => (
-        <li key={id} class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}%</span>
+        <li key={id} className="item">
+          <span className="label">{label}</span>
+          <span className="percentage">{percentage}%</span>
         </li>
       ))}
     </ul>

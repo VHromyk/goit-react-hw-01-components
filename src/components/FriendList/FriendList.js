@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const FriendList = ({ friends }) => (
-  <ul class="friend-list">
+  <ul className="friend-list">
     {friends.map(({ avatar, name, isOnline, id }) => (
       <li key={id} className="item">
         <span className="status">{isOnline}</span>
