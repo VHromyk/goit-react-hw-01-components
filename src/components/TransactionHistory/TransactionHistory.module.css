@@ -1,0 +1,29 @@
+.table {
+  margin-top: 100px;
+  border-collapse: collapse;
+  color: #686461;
+  width: 600px;
+}
+th {
+  padding: 10px;
+  color: white;
+  background: #57bed8;
+  font-weight: bold;
+  border: 1px solid grey;
+}
+td {
+  padding: 10px;
+  border: 1px solid #d2d1d6;
+  text-align: center;
+}
+tbody {
+  color: rgb(104, 118, 119);
+}
+
+.color_white {
+  background-color: white;
+}
+
+.color_dark {
+  background-color: rgb(245, 236, 236);
+}

@@ -7,7 +7,8 @@ import FriendList from './components/FriendList/FriendList';
 import friends from './components/FriendList/friends.json';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import transactions from './components/TransactionHistory/transactions.json';
-console.log(transactions);
+import colorPicker from './components/Statistics/colorPicker';
+import './styles.css';
 
 const App = () => {
   return (
@@ -21,7 +22,11 @@ const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" stats={statisticalData} />
+      <Statistics
+        title="Upload stats"
+        stats={statisticalData}
+        options={colorPicker}
+      />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
